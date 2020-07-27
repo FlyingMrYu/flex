@@ -1,0 +1,75 @@
+@mixin box {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+}
+.flex{
+    @include box;
+}
+.row {
+    @include box;
+    flex-direction: row;
+}
+
+.column {
+    @include box;
+    flex-direction: column;
+}
+
+.flex-box {
+    @include box;
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+.flex-center {
+    @include box;
+    justify-content: center;
+    align-items: center;
+}
+
+.nowrap {
+    @include box;
+    flex-wrap: nowrap;
+}
+
+.wrap {
+    @include box;
+    flex-wrap: wrap;
+}
+
+.flex-start {
+    @include box;
+    justify-content: flex-start;
+}
+
+.flex-end {
+    @include box;
+    justify-content: flex-end
+}
+
+
+.flex-between {
+    @include box;
+    justify-content: space-between;
+}
+
+.flex-around {
+    @include box;
+    justify-content: space-around;
+}
+
+.align-start {
+    @include box;
+    align-items: flex-start;
+}
+
+.align-end {
+    @include box;
+    align-items: flex-end
+}
+
+.align-center {
+    @include box;
+    align-items: center
+}
